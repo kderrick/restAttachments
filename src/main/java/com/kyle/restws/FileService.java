@@ -12,11 +12,13 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 
 import org.apache.cxf.jaxrs.ext.multipart.Attachment;
+import org.springframework.stereotype.Service;
 
 @Path("/fileService")
+@Service
 public class FileService {
 
-	private static final String FILE_PATH = "/Users/kylederrick/Documents/workspace";
+	private static final String FILE_PATH = "/Users/kylederrick/Documents/workspace/uploaded.jpg";
 
 	@Path("/upload")
 	@POST
